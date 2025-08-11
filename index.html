@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نانی کیک - منو</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="loading-screen">
+      <div class="loading-content">
+        <div class="cafe-logo">
+          <i class="fas fa-coffee"></i>
+          <!--when loading-->
+          <h1>رویاهای شیرین</h1>
+          <h3>Nani Cake Cafe & Bakery</h3>
+        </div>
+
+        <!-- Flamingo Animation Container -->
+        <div class="flamingo-container">
+          <img
+            src="flamingo.png"
+            class="flamingo-img flamingo-left"
+            alt="Flamingo Left"
+          />
+          <img
+            src="flamingo.png"
+            class="flamingo-img flamingo-right"
+            alt="Flamingo Right"
+          />
+        </div>
+
+        <div class="loading-bar">
+          <div class="loading-progress"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <header class="header">
+        <div class="header-content">
+          <div class="logo">
+            <i class="fas fa-coffee"></i>
+            <h1>Nani Cake Cafe & Bakery menu</h1>
+          </div>
+        </div>
+        <!-- New horizontal filter bar -->
+        <div class="filter-container">
+          <div class="filter-scroll">
+            <button class="filter-btn active" data-category="all">
+              <i class="fas fa-th-large"></i>
+              <span>همه</span>
+            </button>
+            <button class="filter-btn" data-category="coffee">
+              <i class="fas fa-coffee"></i>
+              <span>قهوه</span>
+            </button>
+            <button class="filter-btn" data-category="hot-drinks">
+              <i class="fas fa-mug-hot"></i>
+              <span>نوشیدنی‌های گرم</span>
+            </button>
+            <button class="filter-btn" data-category="cold-drinks">
+              <i class="fas fa-glass-whiskey"></i>
+              <span>نوشیدنی‌های سرد</span>
+            </button>
+            <button class="filter-btn" data-category="cookies">
+              <i class="fas fa-cookie-bite"></i>
+              <span>کلوچه</span>
+            </button>
+            <button class="filter-btn" data-category="bento-cake">
+              <i class="fas fa-birthday-cake"></i>
+              <span>کیک بنتو</span>
+            </button>
+            <button class="filter-btn" data-category="mochi">
+              <i class="fas fa-circle"></i>
+              <span>موچی</span>
+            </button>
+            <button class="filter-btn" data-category="special-offer">
+              <i class="fas fa-star"></i>
+              <span>پیشنهاد ویژه</span>
+            </button>
+          </div>
+          <!-- Scroll indicators -->
+          <div class="scroll-indicator left">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div class="scroll-indicator right">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </header>
+      <main class="main-content">
+        <!-- Special Offers Box -->
+        <div class="special-offer-box" id="special-offer-box">
+          <div class="special-offer-title">پیشنهاد ویژه این هفته</div>
+          <div class="special-offer-items">
+            <div class="menu-item" data-category="special-offer">
+              <div class="item-image">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="item-content">
+                <h3>
+                  کیک شکلاتی ویژه <span class="popular-badge">محبوب</span>
+                </h3>
+                <p>کیک شکلاتی با مغز ترافل</p>
+                <div class="price">
+                  <span class="old-price">۷۵,۰۰۰</span>
+                  <span class="discounted-price">۵۵,۰۰۰ تومان</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-item" data-category="special-offer">
+              <div class="item-image">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="item-content">
+                <h3>لاته کاراملی</h3>
+                <p>لاته با سس کارامل و خامه</p>
+                <div class="price">
+                  <span class="old-price">۵۰,۰۰۰</span>
+                  <span class="discounted-price">۳۵,۰۰۰ تومان</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-item" data-category="special-offer">
+              <div class="item-image">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="item-content">
+                <h3>کلوچه بادام</h3>
+                <p>
+                  کلوچه نرم با بادام تازه و عسل
+                  <span class="popular-badge">محبوب</span>
+                </p>
+                <div class="price">
+                  <span class="old-price">۳۵,۰۰۰</span>
+                  <span class="discounted-price">۲۲,۰۰۰ تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-grid">
+          <!-- Coffee Section -->
+          <div class="menu-item" data-category="coffee">
+            <div class="item-image">
+              <i class="fas fa-coffee"></i>
+            </div>
+            <div class="item-content">
+              <h3>اسپرسو کلاسیک <span class="popular-badge">محبوب</span></h3>
+              <p>اسپرسو قوی و خوش‌طعم تک شات</p>
+              <div class="price">۳۵,۰۰۰ تومان</div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="coffee">
+            <div class="item-image">
+              <i class="fas fa-coffee"></i>
+            </div>
+            <div class="item-content">
+              <h3>کاپوچینو</h3>
+              <p>ترکیب عالی اسپرسو، شیر بخار دیده و کف</p>
+              <div class="price">۴۵,۰۰۰ تومان</div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="coffee">
+            <div class="item-image">
+              <i class="fas fa-coffee"></i>
+            </div>
+            <div class="item-content">
+              <h3>لاته</h3>
+              <p>اسپرسو نرم با شیر مخملی بخار دیده</p>
+              <div class="price">۴۷,۵۰۰ تومان</div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="coffee">
+            <div class="item-image">
+              <i class="fas fa-coffee"></i>
+            </div>
+            <div class="item-content">
+              <h3>موکا</h3>
+              <p>اسپرسو با شکلات غنی و شیر بخار دیده</p>
+              <div class="price">۵۲,۵۰۰ تومان</div>
+            </div>
+          </div>
+
+          <!-- Hot Drinks Section -->
+          <div class="menu-item" data-category="hot-drinks">
+            <div class="item-image">
+              <i class="fas fa-mug-hot"></i>
+            </div>
+            <div class="item-content">
+              <h3>هات چاکلت</h3>
+              <p>هات چاکلت غنی و خامه‌ای بلژیکی</p>
+              <div class="price">۴۰,۰۰۰ تومان</div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="hot-drinks">
+            <div class="item-image">
+              <i class="fas fa-mug-hot"></i>
+            </div>
+            <div class="item-content">
+              <h3>چای لاته</h3>
+              <p>چای سیاه ادویه‌دار با شیر بخار دیده</p>
+              <div class="price">۴۵,۰۰۰ تومان</div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="hot-drinks">
+            <div class="item-image">
+              <i class="fas fa-mug-hot"></i>
+            </div>
+            <div class="item-content">
+              <h3>ماچا لاته</h3>
+              <p>چای سبز ژاپنی ممتاز با شیر بخار دیده</p>
+              <div class="price">۵۰,۰۰۰ تومان</div>
+            </div>
+          </div>
+
+          <!-- Cold Drinks Section -->
+          <div class="menu-item" data-category="cold-drinks">
+            <div class="item-image">
+              <i class="fas fa-glass-whiskey"></i>
+            </div>
+            <div class="item-content">
+              <h3>آیس لاته</h3>
+              <p>اسپرسو سرد با شیر سرد روی یخ</p>
+              <div class="price">۴۷,۵۰۰ تومان</div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="cold-drinks">
+            <div class="item-image">
+              <i class="fas fa-glass-whiskey"></i>
+            </div>
+            <div class="item-content">
+              <h3>فراپوچینو</h3>
+              <p>نوشیدنی قهوه مخلوط با خامه زده</p>
+              <div class="price">۵۵,۰۰۰ تومان</div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="cold-drinks">
+            <div class="item-image">
+              <i class="fas fa-glass-whiskey"></i>
+            </div>
+            <div class="item-content">
+              <h3>لیموناد</h3>
+              <p>لیموناد تازه فشرده با نعناع</p>
+              <div class="price">۳۵,۰۰۰ تومان</div>
+            </div>
+          </div>
+
+          <!-- Cookies Section -->
+          <div class="menu-item" data-category="cookies">
+            <div class="item-image">
+              <i class="fas fa-cookie-bite"></i>
+            </div>
+            <div class="item-content">
+              <h3>کلوچه شکلات چیپ</h3>
+              <p>کلوچه کلاسیک با تکه‌های شکلات نرم</p>
+              <div class="price">۲۵,۰۰۰ تومان</div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="cookies">
+            <div class="item-image">
+              <i class="fas fa-cookie-bite"></i>
+            </div>
+            <div class="item-content">
+              <h3>کلوچه دابل شکلات</h3>
+              <p>کلوچه شکلات غنی با تکه‌های شکلات</p>
+              <div class="price">۲۷,۵۰۰ تومان</div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="cookies">
+            <div class="item-image">
+              <i class="fas fa-cookie-bite"></i>
+            </div>
+            <div class="item-content">
+              <h3>کلوچه جو دوسر کشمش</h3>
+              <p>کلوچه جو دوسر مقوی با کشمش گوشتی</p>
+              <div class="price">۲۲,۵۰۰ تومان</div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="cookies">
+            <div class="item-image">
+              <i class="fas fa-cookie-bite"></i>
+            </div>
+            <div class="item-content">
+              <h3>کلوچه شکر صورتی</h3>
+              <p>کلوچه شکر ظریف با یخ‌چینه صورتی</p>
+              <div class="price">۳۰,۰۰۰ تومان</div>
+            </div>
+          </div>
+
+          <!-- Bento Cake Section -->
+          <div class="menu-item" data-category="bento-cake">
+            <div class="item-image">
+              <i class="fas fa-birthday-cake"></i>
+            </div>
+            <div class="item-content">
+              <h3>کیک بنتو وانیلی</h3>
+              <p>کیک وانیل سبک با یخ‌چینه کره‌ای</p>
+              <div class="price">۸۵,۰۰۰ تومان</div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="bento-cake">
+            <div class="item-image">
+              <i class="fas fa-birthday-cake"></i>
+            </div>
+            <div class="item-content">
+              <h3>کیک بنتو شکلات</h3>
+              <p>کیک شکلات غنی با گاناش</p>
+              <div class="price">۹۰,۰۰۰ تومان</div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="bento-cake">
+            <div class="item-image">
+              <i class="fas fa-birthday-cake"></i>
+            </div>
+            <div class="item-content">
+              <h3>کیک بنتو توت فرنگی</h3>
+              <p>کیک توت فرنگی صورتی با توت‌های تازه</p>
+              <div class="price">۹۵,۰۰۰ تومان</div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="bento-cake">
+            <div class="item-image">
+              <i class="fas fa-birthday-cake"></i>
+            </div>
+            <div class="item-content">
+              <h3>کیک بنتو ماچا</h3>
+              <p>کیک چای سبز با خامه ماچا</p>
+              <div class="price">۹۷,۵۰۰ تومان</div>
+            </div>
+          </div>
+
+          <!-- Mochi Section -->
+          <div class="menu-item" data-category="mochi">
+            <div class="item-image">
+              <i class="fas fa-circle"></i>
+            </div>
+            <div class="item-content">
+              <h3>موچی توت فرنگی</h3>
+              <p>خمیر برنج شیرین پر شده با بستنی توت فرنگی</p>
+              <div class="price">۳۵,۰۰۰ تومان</div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="mochi">
+            <div class="item-image">
+              <i class="fas fa-circle"></i>
+            </div>
+            <div class="item-content">
+              <h3>موچی ماچا</h3>
+              <p>موچی چای سبز با بستنی ماچا</p>
+              <div class="price">۳۷,۵۰۰ تومان</div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="mochi">
+            <div class="item-image">
+              <i class="fas fa-circle"></i>
+            </div>
+            <div class="item-content">
+              <h3>موچی شکلات</h3>
+              <p>موچی شکلات با بستنی شکلات تلخ</p>
+              <div class="price">۳۷,۵۰۰ تومان</div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="mochi">
+            <div class="item-image">
+              <i class="fas fa-circle"></i>
+            </div>
+            <div class="item-content">
+              <h3>موچی انبه</h3>
+              <p>موچی استوایی با بستنی انبه</p>
+              <div class="price">۳۵,۰۰۰ تومان</div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <p>
+            &copy; 2025 Made by RAMTIN.M with
+            <i class="fas fa-heart"></i> and lots of coffee
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
